@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splish_background">
+
+
+    <ImageView
+        android:layout_width="@dimen/x570"
+        android:layout_height="@dimen/y570"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/x285"
+        android:src="@mipmap/splash1" />
+
+
+    <ImageView
+        android:layout_width="@dimen/x134"
+        android:layout_height="@dimen/y120"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y22"
+        android:src="@mipmap/splash2" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/y88"
+        android:text="Face+1"
+        android:textColor="#2287bb"
+        android:textSize="@dimen/y24" />
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/tv1"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="@dimen/y10"-->
+    <!--android:text="版权所有：北京市平谷区刘家店镇人民政府"-->
+    <!--android:textColor="#b4b4b4"-->
+    <!--android:textSize="@dimen/y24" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="@dimen/y19"-->
+    <!--android:layout_marginTop="@dimen/y10"-->
+    <!--android:text="设计开发：北京天拓数信科技有限责任公司"-->
+    <!--android:textColor="#b4b4b4"-->
+    <!--android:textSize="@dimen/y24" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"></android.support.v4.view.ViewPager>
+
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y250"
+        app:ci_drawable="@drawable/guide_dot_select"
+        app:ci_drawable_unselected="@drawable/guide_no_select"
+        app:ci_height="@dimen/y20"
+        app:ci_margin="@dimen/x20"
+        app:ci_width="@dimen/x20" />
+
+</RelativeLayout>

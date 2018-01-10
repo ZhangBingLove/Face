@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="cn.ttsx.face.activity.PersonActivity">
+
+    <cn.ttsx.face.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.ttsx.face.view.TopBar>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--确认-->
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/press_login_button_empty"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="添加人员"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/y40" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_emtpy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_emtpy"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y200"
+            android:src="@mipmap/no_data2x" />
+
+        <TextView
+            android:id="@+id/tv_emtpy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/y30"
+            android:text="暂无人员，请添加人员吧~"
+            android:textColor="#999999"
+            android:textSize="@dimen/y36" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="cn.ttsx.face.activity.NewMoveActivity">
+
+    <cn.ttsx.face.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </cn.ttsx.face.view.TopBar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y30"
+                android:layout_alignParentBottom="true"
+                android:background="#dcdcdc" />
+
+            <!--活动名称-->
+            <RelativeLayout
+                android:id="@+id/ll_userName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30">
+
+                <TextView
+                    android:id="@+id/tv_moveName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="活动名称:"
+                    android:textColor="#969696"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:id="@+id/et_moveName"
+                    style="@style/RegisterTxtStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x212"
+                    android:layout_marginTop="@dimen/y50"
+                    android:hint="请输入活动名称" />
+
+                <ImageView
+                    android:id="@+id/iv_clear_moveName"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/y50"
+                    android:src="@mipmap/search_delete"
+                    android:visibility="gone"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dcdcdc" />
+            </RelativeLayout>
+
+            <!--活动地点-->
+            <RelativeLayout
+                android:id="@+id/ll_"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30">
+
+                <!--<ImageView-->
+                <!--android:id="@+id/iv_icon1"-->
+                <!--android:layout_width="@dimen/x36"-->
+                <!--android:layout_height="@dimen/y36"-->
+                <!--android:layout_marginLeft="@dimen/x40"-->
+                <!--android:layout_marginTop="@dimen/y50"-->
+                <!--android:src="@mipmap/me" />-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="活动地点:"
+                    android:textColor="#969696"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:id="@+id/et_move_address"
+                    style="@style/RegisterTxtStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x212"
+                    android:layout_marginTop="@dimen/y50"
+                    android:hint="请输入活动地点" />
+
+                <ImageView
+                    android:id="@+id/iv_clear_password"
+                    android:layout_width="@dimen/x36"
+                    android:layout_height="@dimen/y36"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/y50"
+                    android:src="@mipmap/search_delete"
+                    android:visibility="gone"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dcdcdc" />
+            </RelativeLayout>
+
+            <!--开始时间-->
+            <RelativeLayout
+                android:id="@+id/ll_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="开始时间:"
+                    android:textColor="#969696"
+                    android:textSize="@dimen/y36" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x212"
+                    android:text="请选择开始时间"
+                    android:textColor="#c8c8c8"
+                    android:textSize="@dimen/y36" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dcdcdc" />
+            </RelativeLayout>
+
+            <!--结束时间-->
+            <RelativeLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y96"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="结束时间:"
+                    android:textColor="#969696"
+                    android:textSize="@dimen/y36" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x212"
+                    android:text="请选择结束时间"
+                    android:textColor="#c8c8c8"
+                    android:textSize="@dimen/y36" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dcdcdc" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_recycle"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y15"
+                android:text="描         述:"
+                android:textColor="#969696"
+                android:textSize="@dimen/y36" />
+
+            <LinearLayout
+                android:id="@+id/ll_description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y160"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/y30"
+                android:background="@drawable/assay_edit_text">
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x5"
+                    android:layout_marginRight="@dimen/x5"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请输入活动描述"
+                    android:padding="@dimen/x10"
+                    android:textSize="@dimen/y36" />
+
+            </LinearLayout>
+
+
+            <!--确认-->
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="@dimen/x660"
+                android:layout_height="@dimen/y98"
+                android:layout_below="@+id/ll_passWord"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/y30"
+                android:layout_marginTop="@dimen/y60"
+                android:background="@drawable/press_login_button_empty"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/y40" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorMain</item>
+        <item name="colorAccent">@color/colorMain</item>
+    </style>
+
+    <!--注册登录找回密码等EditText文字-->
+    <style name="RegisterTxtStyle">
+        <item name="android:textSize">@dimen/y36</item>
+        <item name="android:textColor">#323232</item>
+        <item name="android:textColorHint">#c8c8c8</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">@dimen/x36</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+    </style>
+
+</resources>

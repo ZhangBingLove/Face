@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="cn.ttsx.face.activity.MoveDetailsActivity">
+
+    <cn.ttsx.face.view.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </cn.ttsx.face.view.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y280"
+        android:layout_below="@+id/topbar"
+        android:background="@color/colorMain">
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_bg"
+        android:layout_marginTop="@dimen/x24"
+        android:background="@color/colorWhite"></android.support.v7.widget.RecyclerView>
+
+    <!--确认-->
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/press_login_button_empty"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="扫脸签到"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/y40" />
+
+</RelativeLayout>

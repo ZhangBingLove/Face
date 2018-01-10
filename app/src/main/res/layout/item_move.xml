@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y300"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@color/colorWhite">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_portrait"
+            android:layout_width="@dimen/x230"
+            android:layout_height="@dimen/y210"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            fresco:actualImageScaleType="fitCenter"
+            fresco:failureImage="@mipmap/splash1"
+            fresco:failureImageScaleType="fitXY"
+            fresco:placeholderImage="@mipmap/splash1"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_toRightOf="@+id/iv_portrait"
+            android:text="张三"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_toRightOf="@+id/iv_portrait"
+            android:singleLine="true"
+            android:text="地址:   张家村李家胡同"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+
+            android:id="@+id/tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_address"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_toRightOf="@+id/iv_portrait"
+            android:singleLine="true"
+            android:text="地址:   张家村李家胡同"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32" />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_start_time"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/y18"
+            android:layout_toRightOf="@+id/iv_portrait"
+            android:singleLine="true"
+            android:text="地址:   张家村李家胡同"
+            android:textColor="#333333"
+            android:textSize="@dimen/y32" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

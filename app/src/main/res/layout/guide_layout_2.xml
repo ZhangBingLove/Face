@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_bg_2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/x564"
+        android:layout_height="@dimen/y492"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y190"
+        android:src="@mipmap/guide2" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y96"
+        android:gravity="center"
+        android:text="人员信息管理"
+        android:textColor="#6e7388"
+        android:textSize="@dimen/y48" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y28"
+        android:gravity="center"
+        android:text="面部信息索引查询，高效，准确，智能"
+        android:textColor="#6e7388"
+        android:textSize="@dimen/y34" />
+</LinearLayout>
